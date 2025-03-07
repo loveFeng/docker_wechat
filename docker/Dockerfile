@@ -26,6 +26,7 @@ RUN dnf install -y go \
 RUN echo "root:123" | chpasswd \
         && mkdir ~/Desktop \
         && mv res/*.desktop ~/Desktop \
+        && mv res/start.sh ~/Desktop \
         && unzip -o res/v*.zip -d res \
         && rm res/v*.zip
 
